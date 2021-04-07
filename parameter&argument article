@@ -1,0 +1,28 @@
+Introduction
+In this article, I'll be discussing the differences between these two(2) keywords: Arguments and Parameters in Programming. These are terms that are often misunderstood and sometimes interchanged when talking about functions.
+
+Definitions
+What are Parameters?
+Parameters in simple terms are placeholders for what are needed in the future in a function.
+
+What are Arguments?
+Arguments are values used as input to a function.
+
+Code Snippets
+function addNumbers(x, y) {
+   return x + y;
+};
+
+COPY
+addNumbers(2, 3);
+
+COPY
+Code Explanation
+In the first code snippet, we created a function to add numbers.
+We gave it parameters of x and y.
+The 'x' and 'y' acts as placeholder for any value we plan on inserting into the function in the future when it's being called.
+In the second code snippet, we called the function already created in code snippet 1, the passed some values to it.
+The values "2" and "3" replaced the placeholders "x" and "y".
+Those values here are referred to as Arguments.
+Conclusion
+Parameters are just spaces we reserve for use in future while Arguments are items or values we insert into those spaces when the function or code is needed in future.

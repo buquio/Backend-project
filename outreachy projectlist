@@ -1,0 +1,216 @@
+
+//////////////////
+OUTREACHY POSSIBLE PROJECT
+1.Debian - 2 interns
+Debian is a volunteer-driven project building "the Universal Operating System", a 100% free and open source distribution, based on the Linux, FreeBSD and Hurd kernels, for all devices, ranging from mobile phones, personal computers, to mainframes and distributed cluster.
+
+1a.Debian project #1
+Create a yarn plugin to resolve node modules installed via apt
+
+Skill description
+Impact on intern selection
+Experience Level
+Node.js
+Required
+Debian Packaging
+Preferred
+
+1b.Debian Continuous Integration Platform Improvements
+
+Skill description
+Impact on intern selection
+Experience Level
+Git
+Preferred
+HTML
+Preferred
+Ruby
+Preferred
+
+2.InterMine - 1 intern
+InterMine integrates biological data sources and makes it easy to query, visualise, and analyse the data via a graphical user interface or via APIs in Python, R, Perl, and more.
+
+2a.InterMine project #1
+Create InterMine query builder library
+
+Skill description
+Impact on intern selection
+Experience Level
+React.js
+Required
+Front-end web development
+Required
+User interfaces
+Preferred
+
+2b InterMine project #3
+Write interaction tests for webapp showing biological data
+
+Skill description
+Impact on intern selection
+Experience Level
+HTML
+Preferred
+Cypress
+Preferred
+JavaScript
+Preferred
+
+3. OCaml - 5 interns
+OCaml is a (high-level, typed, functional) programming language. The OCaml community contributes to the implementation of the language, as well as the surrounding ecosystem of tools and libraries.
+
+3a.OCaml project #3
+Improve the ocaml.org website
+
+Skill description
+Impact on intern selection
+Experience Level
+CSS
+Preferred
+HTML
+Nice to have
+OCaml
+Nice to have
+
+4 ODK-X - 1 intern
+ODK-X lets you build custom apps to gather, manage, and visualize your data just as well in the field as you do in the office. From cold chain management to longitudinal patient tracking to geographic data collection on mosquito releases, ODK-X helps you build your custom data management app.
+
+4a.ODK-X project #4
+New Date Prompts for ODK-X Survey
+
+Skill description
+Impact on intern selection
+Experience Level
+CSS
+Required
+Javascript
+Required
+JSON
+Nice to have
+HTML
+Nice to have
+
+
+5.Public Lab - 1 intern
+Public Lab is a community where you can learn how to investigate environmental concerns. Using inexpensive DIY techniques, we seek to change how people see the world in environmental, social, and political terms. We are an open network of community organizers, educators, technologists and researchers working to create low cost solutions for monitoring air, water and land.
+
+5a.Public Lab project #1
+Expand and refine Tag/topic system of PublicLab.org
+
+Skill description
+Impact on intern selection
+Experience Level
+JavaScript
+Preferred
+Ruby on Rails
+Preferred
+
+5b.Public Lab project #2
+Improve education-related usability and functionality on PublicLab.org
+
+Skill description
+Impact on intern selection
+Experience Level
+JavaScript
+Preferred
+Ruby on Rails
+Preferred
+
+
+6.Tor Project - 1 intern
+The Tor Project is a US 501(c)(3) non-profit organization advancing human rights and freedoms by creating and deploying free and open source anonymity and privacy technologies, supporting their unrestricted availability and use, and furthering their scientific and popular understanding.
+
+6a.Tor Project project #1
+Help Tor Project support our users
+
+Skill description
+Impact on intern selection
+Experience Level
+Written communication in English
+Required
+GitHub workflow: fork-branch-PR
+Required
+Technical Writer
+
+
+7.UNICEF Innovation - 1 intern
+Innovation at UNICEF is about doing new things to solve problems and improve the lives of children around the world. It is about matching today’s challenges with tomorrow’s solutions.
+
+7a.UNICEF Innovation project #1
+Create map visualizations of digital public good developments and implementations
+
+Skill description
+Impact on intern selection
+Experience Level
+React
+Preferred
+JSON
+Preferred
+Javascript
+Preferred
+Data visualization
+Nice to have
+
+7b.UNICEF Innovation project #2
+Extend the usability of the Juniper Toolset
+
+Skill description
+Impact on intern selection
+Experience Level
+Node JS
+Required
+React JS
+Preferred
+Web development
+Preferred
+
+
+8.Wikimedia - 4 interns
+Wikimedia is a global movement whose mission is to bring free educational content to the world, via Wikipedia and other projects. Help improve our technical backstage!
+
+8a.Wikimedia project #1
+Build a tool for analyzing and visualizing reader navigation on wikipedia
+
+Skill description
+Impact on intern selection
+Experience Level
+Python programming
+Required
+Research
+Nice to have
+HTML
+Nice to have
+Jupyter notebooks
+Nice to have
+
+8b.Wikimedia project #2
+Create notebook based tutorials that help users access and work with data on Wikimedia projects
+
+Skill description
+Impact on intern selection
+Experience Level
+Python 3
+Required
+JSON
+Preferred
+SQL
+Preferred
+Research
+Nice to have
+Technical documentation
+Nice to have
+Jupyter notebooks
+Nice to have
+
+8c.Wikimedia project #3
+Synchronising Wikidata and Wikipedias using pywikibot
+
+Skill description
+Impact on intern selection
+Experience Level
+Python
+Preferred
+Wikidata
+Nice to have
+
+

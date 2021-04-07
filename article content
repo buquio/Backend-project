@@ -1,0 +1,310 @@
+client-side vs server-side	
+
+Introduction
+In talking to a few beginners recently, I found out that they often see these words being thrown around and they can be a bit confusing. And if there’s one thing that a beginner doesn’t need, it’s more confusion.
+Here’s my attempt at clearing up the confusing and making life slightly easier for them.
+client-side vs server-side
+These terms essentially aim to clarify where a particular operation is happening. Is it happening on the server or on the client?
+
+How does the web work?
+  Your browser is your doorway to the internet and it’s job description is as follows:
+To download stuff from the internet and display it to you, often in the form of a web page.
+It also takes your input; button clicks, text you input into text fields and sends it to the internet, so that the internet can do magic with that input and respond with hopefully, more relevant things.
+An example of this flow is a sign up form.You type a url into your browser and it tells the internet “hey, give me the data at that url”.The internet sends “HTML & CSS” back to you. HTML & CSS are just instructions for your browser to what to display; “Your browser, show the user a white page, two text fields somewhere in the middle, a blue button…” Your browser downloads this HTML & CSS, reads it and then shows you the webpage.
+You type some text into the text fields, and the click the button to submit the form.Your browser takes that input from you & sends it to the internet.The internet can now respond with more HTML & CSS that tells your browser to show you a page with the message “Sign up complete” or whatever.And so on and so forth.
+
+what is a server?
+ Simply put: a server, in this context, is a computer that is on the internet.
+“The internet” is just a collection of many many servers; many computers (with no screens attached to them) doing magic and sending the results to your browser for your enjoyment.
+  What this means is that, in the example above, your browser was talking to a server.
+It’s the server that takes the input from the user (her name, email address etc) and saves it for later use.
+This is why you can pick up any device, with any browser and sign in to your favourite social network and it will have all your details saved and ready to go; it’s all on the server.
+Now that we have some idea of what the server is, let’s talk more about what your browser is.
+
+What is a client?
+The client is the software that runs on the user’s computer (your laptop, iPad, smartphone) that is capable of communicating with a server.In this, the client is your browser. It can interpret the information (HTML & CSS, images, videos) that the server sends and display them, in the form that you’ll understand. It can take your input (text, avatars, video recordings) and send them to the server to manipulate and/or save.Another kind of “client”, one you probably use every single day; mobile & desktop applications.
+
+
+
+client-side operations
+As explained above, the client is a piece of software that runs on the user’s computer that communicates with the server.But communicating with the server is not all the client does.Let’s consider the Instagram mobile application:As we know, Instagram is a social network for sharing & consuming images.
+Instagram lets you see pictures of people you follow (by downloading these images from the server and displaying them to you).It also lets you upload pictures for others to see (it takes your images, your expertly composed captions and sends it to the server).
+One cool feature of instagram is that it lets you apply a filter to your image before sharing it with the world.“A filter is software routine that changes the appearance of an image or part of an image by altering the shades and colours of the pixels in some manner”.In Instagram’s case, this filter is done within the application itself. What this means is that, the Instagram mobile application developers wrote code to manipulate the images right on your smartphone.
+This is known as a client-side operation.
+
+
+server-side operations
+The most common example of server-side operations are those that have to do with data storage and retrieval.
+Let’s continue with Instagram as the example.
+As people sign up via the Instagram application & upload pictures, Instagram’s server(s) save all this information to a database that exists on the server.
+ Though it is possible to save images & data on your mobile phone, it doesn’t make sense for your device to store every single profile, their pictures and videos on every device that has the Instagram application. It’s not even possible. There are simply no mobile devices that can store that size of information.
+This is why, every time you want to find a user’s profile and view their information, you have to wait a bit for the results & images to load.During this wait period, the Instagram mobile application sends your search query to the server. The server looks through millions of users & records to find the ones you might be looking for and sends it back to the client.This “searching” is a server-side operation.
+
+It is the job of the software development team to decide whether an operation will be done client-side or server side (based on their inherent constraints) to deliver the best experience to the user.
+
+Rendering
+Let us stop talking about mobile applications for a bit and move back to the web.
+What is rendering?In this context specifically, “rendering” is the combination of data with HTML & CSS to be displayed by the browser.Think about when you sign in to Twitter or any other social network via your browser. You see your name and avatar somewhere on the page. You can also see the most recent posts from specific people you follow.All this data (your name, images, friends’ tweets) lives on the database in the server. But for you to be able to view it in the way you do, this data needs to be combined with HTML & CSS, because that’s the only thing the browser knows how to display.
+ If you sign out from Twitter, and your friend signs in with your computer, they are greeted with a similar page, but not quite exactly the same one. Your name, images and feed have been replaced with theirs.
+This process of taking the relevant data & combining it with HTML & CSS that the browser understands for display purposes is rendering.
+
+server-side rendering
+I wrote earlier that servers send HTML & CSS to your browser, which tells it what to display to you and how.
+In server-side rendering this combination of data (text, images, etc) and display rules is done entirely server-side. The developers have written code that tells the server to take data from it’s database, merge that data with display rules (HTML & CSS) and send it to the browser.It means that we can build entire user experiences that run on the browser (client-side) while communicating with the server to receive and send only data.
+
+
+Apart from HTML & CSS, there’s another language that browsers understand, and it’s called JavaScript.
+JavaScript can be used to manipulate HTML & CSS. This means that JS can change how a page looks after it’s been downloaded.JavaScript can also do this manipulation in response to user input (button clicks, text input, even the movement of your mouse). This is very interesting because it means that the browser doesn’t always have to ask the server for new instructions on what to display. Your server can just send some JavaScript along with the HTML & CSS the first time and not need to send anymore HTML & CSS for a while.We can make user experiences faster by only requesting data (no user interface information). Data only is relatively lightweight and as such, will be downloaded faster than data + html + css.
+
+
+
+client-side rendering
+This is where “rendering” (combining data with HTML & CSS) is done entirely client side (literally on the browser) using JavaScript.
+
+
+
+
+
+
+
+HOW TO GET STARTED LEARNING FRONTEND DEVELOPMENT
+front-end vs back-end
+These terms can be confusing because people tend to use them when they mean client-side & server-side. But they’re somewhat different, sometimes.
+
+What does front-end mean?
+This is simply anything that has to do with the user interface & experience. A front-end developer is one that writes code to build the user interface.
+This means that every front-end web developer has to understand HTML & CSS.
+It is possible to have a front-end developer writing front-end code even if your web application uses server-side rendering. That the rendering is happening on the server-side doesn’t preclude the fact that someone will write the HTML & CSS that will inform what the user sees.
+ Front-end is not always client-side.On the flip-side, anything that happens on the client-side is referred to as front-end.
+
+What is a framework?
+In software development, a framework (or a library) is pre-written code that makes it easier to build the same kind of thing over and over again.
+Developers have noticed that when you’re building web (or any kind of) applications, there are certain things you’d probably want to do; like render a webpage, or collect user input.
+So instead of letting every developer write all the code to do this from scratch each time, they create frameworks to make a lot of things easier to do.
+There are often many frameworks for the same kind of thing, and that’s because different people always have different ideas as to the best way to accomplish something.
+front-end frameworks
+I think, the term “front-end framework” causes a lot of confusion.
+When people use the term “front-end framework”, what they truly mean is “client-side rendering framework”. Despite the fact that there’s a lot of front-end code writing in server-side rendering.
+I think it’s too late to change how we use these terms but it’s important to understand what people mean when they say them.
+So, generally, a front-end framework is a code library (aka pre-written) code to make client-side rendering (using JavaScript) easier, faster & more performant.
+Examples of these are: React, Vue, Angular
+What does back-end mean?
+This is anything happening on the server-side that isn’t to do with the user interface.
+These things (data storage, retrieval & manipulation) can also happen client-side (like in the Instagram app example) but they’re never ever referred to as back-end operations.
+…back-end frameworks?
+Most frameworks that people refer to as back-end frameworks are actually “general purpose web frameworks”.
+This is because you can use all of them to do server side rendering of HTML & CSS. As such, it’s weird to refer to them as back-end frameworks in that context, because they’re doing both back-end and front-end duties.
+You can also decide to use them for data storage, retrieval & manipulation only and send all that data to the client-side for client-side rendering. In this context, it is fine to refer to them as a back-end framework, because they’re not at all concerned with the front-end of the application.
+Examples of these are: Rails, Django, Laravel, Express.js
+JavaScript on the Server: Node.js
+As JavaScript became more popular and more developers learned the language, it became a good idea to have JavaScript run somewhere else that wasn’t just the browser.
+And that’s what Node.js is. It’s the software that allows anything (not just browsers) to understand and interpret JavaScript.
+Now, because of Node.js we can write JavaScript on the client-side and on the server-side, reducing the number of languages developers need to learn to build a complete web application.
+(There are actually slight differences in the way JavaScript works in the browser and how it works in Node.js, but that’s beyond the scope of this article)
+
+I frequently get questions about how to get started learning frontend development. There is no "correct" way to do it, but this guide is my personal advice for a good way to get started. It was inspired by Opemipo's UX Design Learning Guide.
+This is meant to just be an introduction, and of course I can't cover anything. So try and do as much research outside of what's provided here as possible. Send me feedback on twitter @ireaderinokun .
+1. Understanding the Web
+________________________________________
+Before getting into developing anything for the web, it's important to understand how all the pieces fit together. What exactly is "frontend"? How does it differ to "backend"? The article below does a great job at explaining all the terminology.
+front-end vs back-end vs client-side vs server-side
+Checklist
+•	[ ] I can explain the difference between front-end vs back-end and client-side vs server-side
+•	[ ] I understand the role of a frontend developer
+2. Introduction to Interface Development
+________________________________________
+The building blocks of the web are two languages - HTML and CSS. HTML controls the content and structure of the website, while CSS controls the look and styling of the site. In this module, you'll learn the fundamentals of these languages and build your first website!
+Resources
+Checklist
+•	[ ] I know how to choose the appropriate HTML elements for different kinds of content
+•	[ ] I understand what media queries are and the syntax for using them
+Project - Build a Website
+Your first project will be to try to recreate the homepage of any website you like. Try to do it without looking at the source code, and try to get as close as possible to the original design. If you need a suggestion for a site to recreate, you can use my blog, bitsofcode.
+•	[ ] I've completed the project
+3.Understanding Browser Compatibility
+________________________________________
+When building websites, we need to consider the device and browser the end user will be on because, unfortunately, not all browsers are created equal. Not all features of HTML, CSS, and Javascript are available to all browsers, so we need to consider the support of features before we use them. In this module, you'll learn about how build a website that works on all browsers.
+Resources
+Can I Use?
+Can I Use is an amazing tool that displays the browser support for a range of features. You can use it to see which browsers support which features, and decide on whether to use those features on your site based on it.
+Can I use... Support tables for HTML5, CSS3, etc
+Checklist
+•	[ ] I understand what vendor prefixes are and how to use them
+•	[ ] I can use feature queries to adapt my website to different browsers
+Project - Make your Website Compatible
+Check the website you created in the previous module in as many browsers as possible, and make sure it looks as intended. Try less-used browsers like Opera Mini and Internet Explorer.
+•	[ ] I've completed the project
+4. Semantics & Accessibility
+________________________________________
+In this module, we'll learn why proper semantics matter, and how to build accessible websites that can be used by as many people.
+Resources
+Checklist
+•	[ ] I understand why semantics are important
+Project - Build a Form
+Create a simple page with a registration form. The form should have a variety of input types (text, email, url, password). Make sure all the inputs are accessible, and test that the form can be completed and submitted without looking at the screen.
+•	[ ] I've completed the project
+5. Introduction to Javascript
+________________________________________
+Javascript is the language that brings interactivity to the web. In this module, you'll learn the ins and outs of the language, and how to use it to bring interactivity to your website.
+Resources
+Checklist
+•	[ ] I can create variables
+•	[ ] I can write a function
+•	[ ] I can write a conditional statement
+•	[ ] I can create a loop
+•	[ ] I can manipulate the elements on a page with Javascript
+Project - FizzBuzz
+Write a program that logs to the console the numbers from 1 to 100. But for multiples of three log “Fizz” instead of the number and for the multiples of five log “Buzz”. For numbers which are multiples of both three and five log “FizzBuzz”.
+•	[ ] I've completed the project
+Project - Build a Calculator
+Build a calculator in your browser using HTML, CSS, and Javascript.
+•	[ ] I've completed the project
+6. Introduction to APIs
+________________________________________
+An API (Application Programming Interface) is a software that allows your website to communicate with some other service. It can be a bit difficult to wrap your head around at first, but APIs are what power all the web applications we use. In this module, you'll learn the fundamentals of REST APIs, the most popular format for APIs.
+Resources
+There are APIs everywhere! Below is a list of free APIs you can use in any project.
+public-apis/public-apis
+Checklist
+•	[ ] I understand the difference between GET, POST, PUT, PATCH, and DELETE requests
+Project - Build a Weather Application
+Using one of the weather-related APIs, for example MetaWeather, create a website that displays weather information based on the location of the person visiting the site.
+•	[ ] I've completed the project
+8. Tooling
+________________________________________
+•	Git
+•	Gulp
+•	SASS
+•	PostCSS
+•	Netlify
+•	WebPack
+What's Next?
+________________________________________
+•	Progressive Web Apps
+•	Web APIs
+•	GraphQL
+•	Frontend Frameworks - React, Angular, Vue
+📚 References
+________________________________________
+•	MDN
+•	W3 Schools
+Resources
+
+What is Web Accessibility?
+refers to the inclusive practice of removing barriers that prevent interaction with, or access to websites, by people with disabilities. When sites are correctly designed, developed and edited, all users have equal access to information and functionality. - Wikipedia
+So basically your website should work for all users and everyone should have access to the content. It’s important to keep in mind that accessibility is not meant only to people with disabilities, we all can benefit from a website built with accessibility taken into consideration.
+Issues we might face while browsing the web
+•	Browsing the web without a mouse. You will need to browse a website with your keyboard until you get a new mouse. During that time, if a website is not built well, you won’t be able to accomplish your tasks as usual and so this will result in a bad experience.
+•	Decrease the laptop brightness to save some battery life. Using light colors for the text will make it very hard to read when the brightness is decreased. Use tools to evaluate the contrast of your colors.
+•	Trying to read small text without your glasses.
+•	Slow Internet connection.
+•	Browsing the web while on of your hands is broken.
+What are the basics steps for making an accessible website?
+•	Write semantic HTML markup and use the appropriate elements depending on the content you have.
+•	Enhance with CSS to establish a look and feel for the website.
+•	Use JavaScript as an enhancement for the functionality.
+HTML is the core foundation of the web. When your website HTML is written in a semantic way, the other things should be easier.
+Assistive Technology Devices
+Refers to physical devices and computer applications that increase and improve functional capabilities for people with disabilities. Users can browser your website from many different devices: mobile phones, smart TVs, computers, laptops, tablets.. etc
+Most operating systems comes with a built-in screen reader application that help users doing their tasks easily.
+Learn how to test for various screen readers on different platforms.
+Each operating system and its screen reader
+Operating System	Screen Reader
+Mac OS	VoiceOver
+Windows	Narrator
+Ubuntu	Orca
+Android	TalkBack
+iOS	VoiceOver
+Things to follow
+1. HTML Markup
+•	Adding lang attribute to the <html> element to let the screen reader announce the document language.
+•	<h1> heading must be added to each page. It could be added to the logo, or a normal title in an article page for example. Then, in your document use headings from <h2> to <h6>.
+•	Use the headings for sectioning the page content only. Don’t use them to make a text look bold or big in size. You have other elements to do that like <strong> tag for example or simply use CSS.
+•	When using images, you have to decide if it’s for decoration purposes only or if it’s very important to the context. If the purpose is purely decorative, use CSS background-image property to show it and otherwise use the <img> element.
+•	When the <img> fails to load, there should be a meaningful alternative text about it, if it’s not important then leave the alt attribute empty. Important: removing the alt attribute will make the screen reader read the image file name, as in our next example it will read it like “foo-bar-01.jpg”, and this is bad.
+•	In case you don’t want the screen readers to read the alt content, just leave it empty.
+<img src="foo-bar-01.jpg" alt="">
+•	Implement a good document outline. Use the HTML headings (h1, h2.. h6) to indicate the importance of each section/title in the web page. Usually, the website title/logo should be inside an <h1> element and the other elements could take from <h2> and below. This is called sectioning content.
+•	When using a semantic markup, you will save a lot of time and take the accessibility for free. For example, by adding <select> element you can navigate between the options by using the up and down arrow keys. In comparison, coding a custom select menu by using <ul> or regular <div>s won’t work with the keyboard. So you will need to invest more time and effort to make this custom designed menu accessible.
+•	To check if your HTML markup is good or not? Try browsing the page without CSS. If you found that some titles that used to be bold and big with CSS, then you are probably using the wrong HTML for that. We can style a <div> element just like <h1> but what about no-css case? This <div> will appear as a regular paragraph.
+•	In order to navigate between the different elements in your page, for example navigation links and a search input, in the HTML the navigation markup should be added before the search. Otherwise, when using tab key the focus will be on the search element first.
+•	HTML provides us with an awesome page landmarks to use like: <header>, <footer>, <main>, <aside>, <section>, <nav>. Use them only once in a page except for the <nav> element, you can use it in the header and footer navigation but you should provide an additional attribute to help screen readers announce it.
+Header
+<header>
+    <nav aria-label="Main Navigation">
+        <!-- nav markup here -->
+    </nav>
+</header>
+Footer
+<footer>
+    <nav aria-label="Footer Navigation">
+        <!-- nav markup here -->
+    </nav>
+</footer>
+You can read more about ARIA in this article.
+•	Always add role="contentinfo" to the <footer> element. That way, screen readers will announce this area as an additional content and information about the page.
+•	Users of screen readers always seek out for ways to quickly skip to the main content. To help them achieve that, we can provide a skip link that will only work with keyboard and screen readers. The idea is simply to hide it off screen with CSS and when we hit tab from the keyboard, it will be activated.
+•	When working with <forms>, you can use the handy <fieldset> element to group a related selectors like checkboxes or radio buttons.
+•	Assign a <label> to each input element. We can apply that by adding an id to the input and then adding this id to for attribute of the label.
+Now when the user click on the label, it will focus the input element.
+<label for="email">Your Email:</label>
+<input type="email" id="email">
+2. Style and Presentation
+•	Embrace the outline property default focus effect. If you don’t like it then that’s fine but be sure to add your custom style. One of the biggest issues that affect the websites accessibility is resetting the value to 0. When trying to navigate the page with your keyboard, you won’t see any the current focused element and so you will get very confused. Be careful, please.
+•	In links hover and active states, do not depend only on color/background changes. Instead, add more indicators that doesn’t depend on the color. For example: underline, bolder text, an outline.
+•	Use relative CSS units to make it possible to enlarge the elements and fonts for users who prefer to zoom-in or change their default browser font size.
+Basic testing for accessibility
+•	Through away your mouse and and start browsing a website you built. Can you use it just like when you use the mouse? Are all the links and buttons focusable?
+•	Use a screen reader and turn off your computer screen. Start browsing with the keyboard and see if it’s easy to navigate and get what you want.
+•	Add filter: grayscale() to the root element <html> of your page. Try to read the content, did you find that some text is hard to read? Then probably you will need to fix some contrast issues
+
+What is an API? In English, please.
+ 
+by Petr Gazarov
+Before I learned software development, API sounded like a kind of beer.
+Today I use the term so often that I have in fact recently tried to order an API at a bar.
+The bartender’s response was to throw a 404: resource not found.
+I meet lots of people, both working in tech and elsewhere, who have a rather vague or incorrect idea about what this fairly common term means.
+Technically, API stands for Application Programming Interface. At some point or another, most large companies have built APIs for their customers, or for internal use.
+But how do you explain API in plain English? And is there a broader meaning than the one used in development and business? First, let’s pull back and look at how the web itself works.
+WWW and remote servers
+When I think about the Web, I imagine a large network of connected servers.
+Every page on the internet is stored somewhere on a remote server. A remote server is not so mystical after all — it’s just a part of a remotely located computer that is optimized to process requests.
+To put things in perspective, you can spin up a server on your laptop capable of serving an entire website to the Web (in fact, a local server is what engineers use to develop websites before releasing them to the public).
+When you type www.facebook.com into your browser, a request goes out to Facebook’s remote server. Once your browser receives the response, it interprets the code and displays the page.
+To the browser, also known as the client, Facebook’s server is an API. This means that every time you visit a page on the Web, you interact with some remote server’s API.
+An API isn’t the same as the remote server — rather it is the part of the server that receives requests and sends responses.
+APIs as a way to serve your customers
+You’ve probably heard of companies packaging APIs as products. For example, Weather Underground sells access to its weather data API.
+Example scenario: Your small business’s website has a form used to sign clients up for appointments. You want to give your clients the ability to automatically create a Google calendar event with the details for that appointment.
+API use: The idea is to have your website’s server talk directly to Google’s server with a request to create an event with the given details. Your server would then receive Google’s response, process it, and send back relevant information to the browser, such as a confirmation message to the user.
+Alternatively, your browser can often send an API request directly to Google’s server bypassing your server.
+How is this Google Calendar’s API different from the API of any other remote server out there?
+In technical terms, the difference is the format of the request and the response.
+To render the whole web page, your browser expects a response in HTML, which contains presentational code, while Google Calendar’s API call would just return the data — likely in a format like JSON.
+If your website’s server is making the API request, then your website’s server is the client (similar to your browser being the client when you use it to navigate to a website).
+From your users perspective, APIs allow them to complete the action without leaving your website.
+Most modern websites consume at least some third-party APIs.
+Many problems already have a third-party solution, be it in the form of a library or service. It’s often just easier and more reliable to use an existing solution.
+It’s not uncommon for development teams to break up their application into multiple servers that talk to each other via APIs. The servers that perform helper functions for the main application server are commonly referred to as microservices.
+To summarize, when a company offers an API to their customers, it just means that they’ve built a set of dedicated URLs that return pure data responses — meaning the responses won’t contain the kind of presentational overhead that you would expect in a graphical user interface like a website.
+Can you make these requests with your browser? Often, yes. Since the actual HTTP transmission happens in text, your browser will always do the best it can to display the response.
+For example, you can access GitHub’s API directly with your browser without even needing an access token. Here’s the JSON response you get when you visit a GitHub user’s API route in your browser (https://api.github.com/users/petrgazarov):
+{  "login": "petrgazarov",  "id": 5581195,  "avatar_url": "https://avatars.githubusercontent.com/u/5581195?v=3",  "gravatar_id": "",  "url": "https://api.github.com/users/petrgazarov",  "html_url": "https://github.com/petrgazarov",  "followers_url": "https://api.github.com/users/petrgazarov/followers",  "following_url": "https://api.github.com/users/petrgazarov/following{/other_user}",  "gists_url": "https://api.github.com/users/petrgazarov/gists{/gist_id}",  "starred_url": "https://api.github.com/users/petrgazarov/starred{/owner}{/repo}",  "subscriptions_url": "https://api.github.com/users/petrgazarov/subscriptions",  "organizations_url": "https://api.github.com/users/petrgazarov/orgs",  "repos_url": "https://api.github.com/users/petrgazarov/repos",  "events_url": "https://api.github.com/users/petrgazarov/events{/privacy}",  "received_events_url": "https://api.github.com/users/petrgazarov/received_events",  "type": "User",  "site_admin": false,  "name": "Petr Gazarov",  "company": "PolicyGenius",  "blog": "http://petrgazarov.com/",  "location": "NYC",  "email": "petrgazarov@gmail.com",  "hireable": null,  "bio": null,  "public_repos": 23,  "public_gists": 0,  "followers": 7,  "following": 14,  "created_at": "2013-10-01T00:33:23Z",  "updated_at": "2016-08-02T05:44:01Z"}
+The browser seems to have done just fine displaying a JSON response. A JSON response like this is ready for use in your code. It‘s easy to extract data from this text. Then you can do whatever you want with the data.
+A is for “Application”
+To close off, let’s throw in a couple more examples of APIs.
+“Application” can refer to many things. Here are some of them in the context of API:
+1.	A piece of software with a distinct function.
+2.	The whole server, the whole app, or just a small part of an app.
+Basically any piece of software that can be distinctively separated from its environment, can be an “A” in API, and will probably also have some sort of API.
+Let’s say you’re using a third-party library in your code. Once incorporated into your code, a library becomes part of your overall app. Being a distinct piece of software, the library would likely have an API which allows it to interact with the rest of your code.
+Here’s another example: In Object Oriented Design, code is organized into objects. Your application may have hundreds of objects defined that can interact with one another.
+Each object has an API — a set of public methods and properties that it uses to interact with other objects in your application.
+An object may also have inner logic that is private, meaning that it’s hidden from the outside scope (and not an API).
+From what we have covered, I hope you take away the broader meaning of API as well as the more common uses of the term today.
+Interesting Resources (stuff that I left out but is still very cool):
+A great youtube video on DNS (Domain Name System)
+HTTP protocol basics
+An Awesome Khan Academy video on Object Oriented Design Principles
+

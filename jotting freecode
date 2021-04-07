@@ -1,0 +1,57 @@
+<style>
+  div {
+    width: 70%;
+    height: 100px;
+    margin:  50px auto;
+    background: linear-gradient(
+      53deg,
+      #ccfffc,
+      #ffcccf
+    );
+  }
+
+div:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+<body>
+<div></div>
+
+
+///////////
+<style>
+  .center {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 25px 10px 0px 0px blue;
+    /* box-shadow: 25px 10px 10px 10px blue; */
+
+  }
+
+</style>
+<div class="center"></div>
+
+/////////
+You can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns. You can use these as well:
+
+fr: sets the column or row to a fraction of the available space,
+
+auto: sets the column or row to the width or height of its content automatically,
+
+%: adjusts the column or row to the percent width of its container.
+
+Here's the code that generates the output in the preview:
+
+grid-template-columns: auto 50px 10% 2fr 1fr;

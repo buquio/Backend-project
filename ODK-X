@@ -1,0 +1,54 @@
+Project Description
+New Date Prompts for ODK-X Survey
+-an Android application for performing data collection in the ODK-X
+-This project is focused on adding new prompt types to capture dates and times.
+-Examples of new date types: 
+
+Add a year only input prompt type 
+Add a month and year only input prompt type
+Add a calendar prompt type that shows the month for a user to choose from
+Add calendar prompt types for non-Gregorian calendars (e.g., Ethiopian calendar, Islamic calendar)
+
+///PROJECT ENVIRON REQUIREMENT
+1. basic system requirements for Android Studio on Windows
+-Microsoft® Windows® 7/8/10 (64-bit)
+-4 GB RAM minimum, 8GB RAM recommended
+-2 GB of available disk space minimum,
+4 GB Recommended (500 MB for IDE + 1.5 GB for Android SDK and emulator system image)
+-1280 x 800 minimum screen resolution
+For use with the Emulator, see the Emulator system requirements.
+
+1b.To install Android Studio on Windows, proceed as follows:
+
+If you downloaded an .exe file (recommended), double-click to launch it.
+If you downloaded a .zip file, unpack the ZIP, copy the android-studio folder into your Program Files folder, and then open the android-studio > bin folder and launch studio64.exe (for 64-bit machines) or studio.exe (for 32-bit machines).
+
+Follow the setup wizard in Android Studio and install any SDK packages that it recommends.
+
+2.Android Emulator below:
+-SDK Tools 26.1.1 or higher
+-64-bit processor
+-Windows: CPU with UG (unrestricted guest) support
+-HAXM 6.2.1 or later (HAXM 7.2.0 or later recommended)
+
+
+3. hardware additional requirements 
+-Intel processor with support for Intel VT-x, Intel EM64T (Intel 64), and Execute Disable (XD) Bit functionality
+-AMD processor on Windows: Android Studio 3.2 or higher and Windows 10 April 2018 release or higher for Windows Hypervisor Platform (WHPX) functionality
+-attached webcam must have the capability to capture 720p frames.
+
+
+
+///GITHUB REQUIREMENT
+System Requirements
+A computer capable of running Node.js
+And capable of running Google’s Android Emulator (https://developer.android.com/studio/run/emulator#requirements), or an Android phone/tablet.
+
+1.setting up an ODK-X environment can be found at our Developer Environment Setup wiki page
+2.Install Android Studio and the SDK.
+3.ODK-X Service MUST be installed on your device, whether by installing the APK or by cloning the project and deploying it.
+4.Building the project
+Open the Survey project in Android Studio. Select Build->Make Project to build the app.
+5.Running
+Be sure to install ODK-X Core onto your device before attempting to run Survey.
+
